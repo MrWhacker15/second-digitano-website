@@ -1,0 +1,759 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<body>
+    <!-- navbar start -->
+    <nav
+        class="shadow-lg overflow-hidden  bg-(--accent-color) text-white shadow-stone-950/20 lg:px-16 px-5 flex flex-wrap items-center py-4 lg:py-2">
+
+        <div class="flex-1 flex justify-between items-center">
+
+            <a href="index.html"
+                class="poppins antialiased text-2xl text-current ml-2 mr-5 block py-1 font-bold">Budgethook</a>
+        </div>
+        <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+            <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+        <div class="py-4 hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+            <nav>
+
+                <ul class="text-xl text-center items-center gap-x-5 pt-4 lg:gap-x-1 lg:text-lg lg:flex  md:pt-0">
+                    <li class="py-2 lg:py-0">
+                        <a href="index.html"
+                            class="poppins antialiased text-md font-normal px-3 py-2 rounded text-white hover:bg-zinc-200/80 hover:text-black transition-all duration-300">Home</a>
+                    </li>
+
+                    <li class="py-2 lg:py-0">
+                        <a href="categories.html"
+                            class="poppins antialiased text-md font-normal px-3 py-2 rounded text-white hover:bg-zinc-200/80 hover:text-black transition-all duration-300">Categories</a>
+                    </li>
+
+                    <li class="py-3 lg:py-0 lg:mr-2">
+                        <a href="about.html"
+                            class="poppins antialiased text-md font-normal px-3 py-2 rounded text-white hover:bg-zinc-200/80 hover:text-black transition-all duration-300">About
+                            Us</a>
+                    </li>
+
+                    <div class="flex px-4 py-3 rounded-lg border-2 border-white overflow-hidden max-w-md mx-auto">
+                        <input type="email" placeholder="Search Something..."
+                            class="w-full outline-none bg-transparent text-gray-200 text-sm" />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" width="16px"
+                            class="fill-gray-200">
+                            <path
+                                d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z">
+                            </path>
+                        </svg>
+                    </div>
+
+                </ul>
+            </nav>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+
+    <!-- category section start -->
+    <section class="w-full container sm:mt-10 lg:mt-20 mb-20 px-5 py-8 lg:px-10 mx-auto lg:max-w-[70%] bg-stone-100">
+        <div class="flex flex-col gap-3 justify-between mt-5 mb-10 border-b-1 py-2 border-stone-500">
+
+            <div>
+                <small class="poppins antialiased text-sm mb-8 text-white bg-(--accent-color) px-2 py-1 rounded-md">3
+                    Minutes</small>
+            </div>
+            <h4 class="text-2xl sm:text-3xl lg:text-4xl font-bold poppins text-black ">The Only Summer Accessories
+                You’ll Need for the Season
+            </h4>
+
+
+            <div class="flex gap-5 justify-between mt-2 items-center">
+
+                <p class="poppins antialiased text-base mt-1 text-stone-600">posted on <span
+                        class="text-(--accent-color)"> 20 July 2025 </span></p>
+
+            </div>
+        </div>
+        <div class="mb-10">
+            <img src="assets/cycle-3.jpg" alt="" class="object-cover w-full">
+        </div>
+
+        <!-- table of contents -->
+        <div class="w-full px-4 py-3 text-center text-gray-800 break-words  rounded mx-auto mb-10">
+            <div class="poppins mx-auto text-xl font-semibold"><strong>Table of contents</strong></div>
+            <ul class="mt-2 list-none px-4 py-4 rounded-lg  bg-stone-300 flex flex-col sm:flex-row">
+                <div class="w-full sm:w-6/12">
+                    <li class="flex items-center lock hover:bg-gray-200 px-2 py-1 rounded">
+                        <small
+                            class="poppins antialiased text-sm text-white bg-(--accent-color) w-7 py-1 rounded-md bold">01
+                        </small>
+                        <a class="block hover:bg-gray-200 px-2 py-1 rounded" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="flex items-center lock hover:bg-gray-200 px-2 py-1 rounded">
+                        <small
+                            class="poppins antialiased text-sm text-white bg-(--accent-color) w-7 py-1 rounded-md bold">02
+                        </small>
+                        <a class="block hover:bg-gray-200 px-2 py-1 rounded" href="#introduction">Mid value</a>
+                    </li>
+                    <li class="flex items-center lock hover:bg-gray-200 px-2 py-1 rounded">
+                        <small
+                            class="poppins antialiased text-sm text-white bg-(--accent-color) w-7 py-1 rounded-md bold">03
+                        </small>
+                        <a class="block hover:bg-gray-200 px-2 py-1 rounded" href="#introduction">Last thing</a>
+                    </li>
+                    <li class="flex items-center lock hover:bg-gray-200 px-2 py-1 rounded">
+                        <small
+                            class="poppins antialiased text-sm text-white bg-(--accent-color) w-7 py-1 rounded-md bold">04
+                        </small>
+                        <a class="block hover:bg-gray-200 px-2 py-1 rounded" href="#introduction">This is good</a>
+                    </li>
+                    <li class="flex items-center lock hover:bg-gray-200 px-2 py-1 rounded">
+                        <small
+                            class="poppins antialiased text-sm text-white bg-(--accent-color) w-7 py-1 rounded-md bold">05
+                        </small>
+                        <a class="block hover:bg-gray-200 px-2 py-1 rounded" href="#introduction">Introduction</a>
+                    </li>
+                </div>
+                <div class="w-full sm:w-6/12">
+                    <li class="flex items-center lock hover:bg-gray-200 px-2 py-1 rounded">
+                        <small
+                            class="poppins antialiased text-sm text-white bg-(--accent-color) w-7 py-1 rounded-md bold">06
+                        </small>
+                        <a class="block hover:bg-gray-200 px-2 py-1 rounded" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="flex items-center lock hover:bg-gray-200 px-2 py-1 rounded">
+                        <small
+                            class="poppins antialiased text-sm text-white bg-(--accent-color) w-7 py-1 rounded-md bold">07
+                        </small>
+                        <a class="block hover:bg-gray-200 px-2 py-1 rounded" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="flex items-center lock hover:bg-gray-200 px-2 py-1 rounded">
+                        <small
+                            class="poppins antialiased text-sm text-white bg-(--accent-color) w-7 py-1 rounded-md bold">08
+                        </small>
+                        <a class="block hover:bg-gray-200 px-2 py-1 rounded" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="flex items-center lock hover:bg-gray-200 px-2 py-1 rounded">
+                        <small
+                            class="poppins antialiased text-sm text-white bg-(--accent-color) w-7 py-1 rounded-md bold">09
+                        </small>
+                        <a class="block hover:bg-gray-200 px-2 py-1 rounded" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="flex items-center lock hover:bg-gray-200 px-2 py-1 rounded">
+                        <small
+                            class="poppins antialiased text-sm text-white bg-(--accent-color) w-7 py-1 rounded-md bold">10
+                        </small>
+                        <a class="block hover:bg-gray-200 px-2 py-1 rounded" href="#introduction">Introduction</a>
+                    </li>
+                </div>
+
+            </ul>
+        </div>
+
+        <!-- post text 1 -->
+        <div class="">
+            <p class="font-sans text-lg font-normal leading-[1.6] text-black ">
+                Some summers I barely think about accessories. This year feels different. Everywhere I look, summer
+                accessory trends are carrying the outfit. They make plain clothes feel more considered without looking
+                like you tried too hard. <br><br>
+
+                The best part? Most of it’s stuff we’ve all owned before—just worn differently. Maybe you dug it out of
+                the back of a drawer, maybe it’s been in your rotation for years. Celebs, influencers, people at the
+                coffee shop… the same few ideas keep popping up. <br> <br>
+
+                Some of them feel nostalgic, others a little unexpected, but all of them are easy enough to try without
+                committing to a whole new look.
+            </p><br>
+
+            <h2 class="font-sans text-3xl font-normal leading-loose text-black ">
+                1. Bandana Hair Accessory
+            </h2>
+
+            <p class="font-sans text-lg font-normal leading-loose text-black ">
+                Bandanas aren’t going anywhere, but somehow they’ve started to feel fresh again. Hailey Bieber in LA
+                with a Pucci-print tied low, Elle Fanning going retro in Cannes, Simone Ashley at Wimbledon with a silk
+                knot that looked like it took no effort. <br> <br>
+
+                They work with linen shirts, slip dresses, denim shorts—basically anything light. I’ve even worn one
+                with a blazer on warmer days; it adds a soft edge without feeling out of place. On really hot
+                afternoons, I just tie one onto my bag handle instead—it’s an easy little detail that still looks
+                intentional.
+            </p>
+        </div>
+
+
+        <!-- product 1-->
+        <div>
+            <div class="flex flex-col gap-3 justify-between mt-5 py-2 ">
+
+
+                <h4 class="text-lg font-bold poppins text-black ">Shop Now
+                </h4>
+
+
+
+            </div>
+
+            <div class="flex flex-wrap gap-3 xl:gap-5 justify-center mb-10">
+
+                <div class="flex gap-5 flex-col sm:flex-row">
+                    <div
+                        class=" shadow-sm group overflow-hidden bg-white shadow-stone-950/5 flex h-[11rem] w-full max-w-[48rem] flex-row  transition-all duration-300 cursor-pointer  hover:bg-(--accent-color) hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                        <div class=" m-0 h-full w-full rounded-r-none">
+                            <img src="assets/cycle-1.jpg" alt="card-image" class="h-full w-full object-cover" />
+                        </div>
+                        <div class="w-full h-max rounded p-4 group-hover:text-white transition-all duration-300">
+
+                            <h5 class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                Braided Jelly Flip Flops</h5>
+
+                            <h4 class="poppins antialiased font-normal text-md md:text-md lg:text-md text-current mb-2">
+                                <span class="line-through">$18</span> $9
+                            </h4>
+
+                            <a href="shop.html">
+                                <div class="w-full rounded mb-2">
+                                    <button
+                                        class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white group-hover:text-black group-hover:bg-zinc-200 transition-all duration-300 group-hover:scale-110">Shop
+                                        Now</button>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class=" shadow-sm group overflow-hidden bg-white shadow-stone-950/5 flex h-[11rem] w-full max-w-[48rem] flex-row  transition-all duration-300 cursor-pointer  hover:bg-(--accent-color) hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                        <div></div>
+                        <div class=" m-0 h-full w-full rounded-r-none">
+                            <img src="assets/cycle-1.jpg" alt="card-image" class="h-full w-full object-cover" />
+                        </div>
+                        <div class="w-full h-max rounded p-4 group-hover:text-white transition-all duration-300">
+
+                            <h5 class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                Braided Jelly Flip Flops</h5>
+
+                            <h4 class="poppins antialiased font-normal text-md md:text-md lg:text-md text-current mb-2">
+                                <span class="line-through">$18</span> $9
+                            </h4>
+
+                            <a href="shop.html">
+                                <div class="w-full rounded mb-2">
+                                    <button
+                                        class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white group-hover:text-black group-hover:bg-zinc-200 transition-all duration-300 group-hover:scale-110">Shop
+                                        Now</button>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex gap-5 flex-col sm:flex-row">
+                    <div
+                        class=" shadow-sm group overflow-hidden bg-white shadow-stone-950/5 flex h-[11rem] w-full max-w-[48rem] flex-row  transition-all duration-300 cursor-pointer  hover:bg-(--accent-color) hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                        <div class=" m-0 h-full w-full rounded-r-none">
+                            <img src="assets/cycle-1.jpg" alt="card-image" class="h-full w-full object-cover" />
+                        </div>
+                        <div class="w-full h-max rounded p-4 group-hover:text-white transition-all duration-300">
+
+                            <h5 class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                Braided Jelly Flip Flops</h5>
+
+                            <h4 class="poppins antialiased font-normal text-md md:text-md lg:text-md text-current mb-2">
+                                <span class="line-through">$18</span> $9
+                            </h4>
+
+                            <a href="shop.html">
+                                <div class="w-full rounded mb-2">
+                                    <button
+                                        class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white group-hover:text-black group-hover:bg-zinc-200 transition-all duration-300 group-hover:scale-110">Shop
+                                        Now</button>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class=" shadow-sm group overflow-hidden bg-white shadow-stone-950/5 flex h-[11rem] w-full max-w-[48rem] flex-row  transition-all duration-300 cursor-pointer  hover:bg-(--accent-color) hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                        <div></div>
+                        <div class=" m-0 h-full w-full rounded-r-none">
+                            <img src="assets/cycle-1.jpg" alt="card-image" class="h-full w-full object-cover" />
+                        </div>
+                        <div class="w-full h-max rounded p-4 group-hover:text-white transition-all duration-300">
+
+                            <h5 class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                Braided Jelly Flip Flops</h5>
+
+                            <h4 class="poppins antialiased font-normal text-md md:text-md lg:text-md text-current mb-2">
+                                <span class="line-through">$18</span> $9
+                            </h4>
+
+                            <a href="shop.html">
+                                <div class="w-full rounded mb-2">
+                                    <button
+                                        class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white group-hover:text-black group-hover:bg-zinc-200 transition-all duration-300 group-hover:scale-110">Shop
+                                        Now</button>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- post text 2 -->
+        <div class="">
+            <h2 class="font-sans text-3xl font-normal leading-loose text-black ">
+                2. Shell Jewelry & Sea Motifs
+            </h2> <br>
+            <p class="font-sans text-lg font-normal leading-[1.6] text-black ">
+                Summertime shell jewellery is not new, but it has been updated. Delicate gold shells, rope textures, and
+                even tiny anchors are more common than chunky souvenirs. It appeared as though Anne Hathaway's cream
+                suit and gold shell pendant belonged together. <br> <br>
+
+                The combination of textures feels deliberate without being fussy, and it looks best with cotton, linen,
+                or airy knits. It also works surprisingly well in urban settings; wearing structured clothing makes the
+                "beach" association less strong. It's one of those accessories that receives praise without drawing much
+                attention to itself.
+            </p><br>
+
+        </div>
+
+        <!-- product 2 -->
+        <div>
+            <div class="flex flex-col gap-3 justify-between mt-5 py-2 ">
+
+
+                <h4 class="text-lg font-bold poppins text-black ">Shop Now
+                </h4>
+
+
+
+            </div>
+
+            <div class="flex flex-wrap gap-3 xl:gap-5 justify-center mb-10">
+
+                <div class="flex gap-5 flex-col sm:flex-row">
+                    <div
+                        class=" shadow-sm group overflow-hidden bg-white shadow-stone-950/5 flex h-[11rem] w-full max-w-[48rem] flex-row  transition-all duration-300 cursor-pointer  hover:bg-(--accent-color) hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                        <div class=" m-0 h-full w-full rounded-r-none">
+                            <img src="assets/cycle-1.jpg" alt="card-image" class="h-full w-full object-cover" />
+                        </div>
+                        <div class="w-full h-max rounded p-4 group-hover:text-white transition-all duration-300">
+
+                            <h5 class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                Braided Jelly Flip Flops</h5>
+
+                            <h4 class="poppins antialiased font-normal text-md md:text-md lg:text-md text-current mb-2">
+                                <span class="line-through">$18</span> $9
+                            </h4>
+
+                            <a href="shop.html">
+                                <div class="w-full rounded mb-2">
+                                    <button
+                                        class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white group-hover:text-black group-hover:bg-zinc-200 transition-all duration-300 group-hover:scale-110">Shop
+                                        Now</button>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class=" shadow-sm group overflow-hidden bg-white shadow-stone-950/5 flex h-[11rem] w-full max-w-[48rem] flex-row  transition-all duration-300 cursor-pointer  hover:bg-(--accent-color) hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                        <div></div>
+                        <div class=" m-0 h-full w-full rounded-r-none">
+                            <img src="assets/cycle-1.jpg" alt="card-image" class="h-full w-full object-cover" />
+                        </div>
+                        <div class="w-full h-max rounded p-4 group-hover:text-white transition-all duration-300">
+
+                            <h5 class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                Braided Jelly Flip Flops</h5>
+
+                            <h4 class="poppins antialiased font-normal text-md md:text-md lg:text-md text-current mb-2">
+                                <span class="line-through">$18</span> $9
+                            </h4>
+
+                            <a href="shop.html">
+                                <div class="w-full rounded mb-2">
+                                    <button
+                                        class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white group-hover:text-black group-hover:bg-zinc-200 transition-all duration-300 group-hover:scale-110">Shop
+                                        Now</button>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- post text 3 -->
+        <div class="">
+            <h2 class="font-sans text-3xl font-normal leading-loose text-black ">
+                How to Style Accessories
+            </h2> <br>
+            <p class="font-sans text-lg font-normal leading-[1.6] text-black ">
+                Don’t wear them all at once. Pick one and let it set the tone. Raffia hat? Keep the rest simple. Scarf
+                belt? Let that be the color. Mixing textures—raffia with silk, jelly with leather—can add depth without
+                feeling overdone. Celebs off-duty usually wear just one or two fashion accessories at a time, and it
+                works. If you’re not sure where to start, think about what you already wear the most and swap in a
+                seasonal version of it.
+            </p><br>
+
+        </div>
+
+        <!-- about author -->
+        <div class="py-10">
+            <h4 class="text-lg font-bold poppins text-black mb-2">About the Author
+            </h4>
+            <div
+                class="rounded-lg border overflow-hidden bg-white border-stone-200 shadow-stone-950/5 w-full border-none shadow-none px-4 py-2">
+                <div class="w-full h-max rounded m-2 mx-0 flex flex-col sm:flex-row items-center gap-4 pb-4 pt-0">
+                    <img src="assets/profile.png" alt="tania andrew"
+                        class="inline-block object-cover object-center w-25 h-25 rounded-full mr-2" />
+                    <div class="flex w-full flex-col gap-0.5">
+                        <div class="flex items-center justify-between">
+                            <a href="author.html">
+                                <h6
+                                    class="poppins antialiased font-bold text-base md:text-lg lg:text-xl text-current hover:text-(--accent-color) transition-all duration-300 hover:-translate-y-0.5">
+                                    Tania Andrew</h6>
+                            </a>
+
+                        </div>
+                        <p class="poppins antialiased text-base text-current">Frontend Lead @ Google</p>
+                        <p class="poppins antialiased text-base text-stone-600">"I found solution to all my design needs
+                            from Creative Tim. I use them as a freelancer in my hobby projects for fun!"</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- up next -->
+        <div class="flex flex-col gap-3 justify-between mt-5 mb-10 border-b-1 py-2 border-stone-500">
+
+
+            <h4 class="text-4xl font-bold poppins text-black ">Up Next
+            </h4>
+
+
+
+        </div>
+        <div class="flex flex-wrap gap-3 xl:gap-5 justify-center mb-10">
+
+            <div
+                class="group w-full rounded-lg border shadow-sm overflow-hidden bg-white border-stone-200 shadow-stone-950/5 max-w-[15rem] transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                <div class="w-full h-full ">
+                    <div class="overflow-hidden">
+
+                        <img src="assets/fashion-1.jpg" alt="image"
+                            class="w-full h-[10rem] transition-all  duration-700 group-hover:scale-110 " />
+
+                    </div>
+                    <div class="px-5 py-3 flex flex-col justify-center">
+                        <div class="w-full h-max rounded mb-3">
+
+                            <h6 class="poppins antialiased font-bold text-base md:text-lg lg:text-xl text-current mb-1">
+                                Fashion blog</h6>
+
+                            <p class="poppins antialiased font-normal text-sm md:text-sm lg:text-md text-current">
+                                The Crochet Dress That Has Me (And Every Maximalist) Obsessed</p>
+
+
+                        </div>
+                        <div class="w-full rounded mb-2">
+                            <a href="blogpost.html">
+                                <button
+                                    class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white hover:text-black hover:bg-zinc-200 transition-all duration-300 hover:scale-110">Read
+                                    More</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div
+                class="group w-full rounded-lg border shadow-sm overflow-hidden bg-white border-stone-200 shadow-stone-950/5 max-w-[15rem] transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                <div class="w-full h-full flex flex-col ">
+                    <div class="overflow-hidden">
+
+                        <img src="assets/vacation-1.jpg" alt="image"
+                            class="w-full h-[10rem] transition-all  duration-700 group-hover:scale-110 " />
+
+                    </div>
+                    <div class="px-5 py-3 flex flex-col justify-center">
+                        <div class="w-full h-max rounded mb-3">
+
+                            <h6 class="poppins antialiased font-bold text-base md:text-lg lg:text-xl text-current mb-1">
+                                Fashion blog</h6>
+
+                            <p class="poppins antialiased font-normal text-sm md:text-sm lg:text-md text-current">
+                                The Crochet Dress That Has Me (And Every Maximalist) Obsessed</p>
+
+
+                        </div>
+                        <div class="w-full rounded mb-2">
+                            <a href="blogpost.html">
+                                <button
+                                    class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white hover:text-black hover:bg-zinc-200 transition-all duration-300 hover:scale-110">Read
+                                    More</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div
+                class="group w-full rounded-lg border shadow-sm overflow-hidden bg-white border-stone-200 shadow-stone-950/5 max-w-[15rem] transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                <div class="w-full h-full ">
+                    <div class="overflow-hidden ">
+
+                        <img src="assets/cycle-3.jpg" alt="image"
+                            class="w-full h-[10rem] transition-all  duration-700 group-hover:scale-110 " />
+
+                    </div>
+                    <div class="px-5 py-3 flex flex-col justify-center">
+                        <div class="w-full h-max rounded mb-3">
+
+                            <h6 class="poppins antialiased font-bold text-base md:text-lg lg:text-xl text-current mb-1">
+                                Fashion blog</h6>
+
+                            <p class="poppins antialiased font-normal text-sm md:text-sm lg:text-md text-current">
+                                The Crochet Dress That Has Me (And Every Maximalist) Obsessed</p>
+
+
+                        </div>
+                        <div class="w-full rounded mb-2">
+                            <a href="blogpost.html">
+                                <button
+                                    class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white hover:text-black hover:bg-zinc-200 transition-all duration-300 hover:scale-110">Read
+                                    More</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- category section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="relative w-full bg-black text-white">
+        <div class="mx-auto w-full max-w-7xl px-8 py-12">
+            <div class="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
+                <div class="flex flex-col">
+                    <h6 class="poppins antialiased font-bold text-3xl md:text-3xl lg:text-4xl text-current mb-4">
+                        Budgethook
+                    </h6>
+                    <div class="flex gap-1 lg:gap-3 m-0">
+                        <a href="#"
+                            class="inline-grid place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-white hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none"><svg
+                                width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4 lg:h-6 lg:w-6">
+                                <path
+                                    d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-grid place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-white hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none"><svg
+                                width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4 lg:h-6 lg:w-6">
+                                <path
+                                    d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                                    stroke="currentColor"></path>
+                                <path d="M17.5 6.51L17.51 6.49889" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-grid place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-white hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none"><svg
+                                width="1.5em" height="1.5em" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4 lg:h-6 lg:w-6">
+                                <path
+                                    d="M16.8198 20.7684L3.75317 3.96836C3.44664 3.57425 3.72749 3 4.22678 3H6.70655C6.8917 3 7.06649 3.08548 7.18016 3.23164L20.2468 20.0316C20.5534 20.4258 20.2725 21 19.7732 21H17.2935C17.1083 21 16.9335 20.9145 16.8198 20.7684Z"
+                                    stroke="currentColor"></path>
+                                <path d="M20 3L4 21" stroke="currentColor" stroke-linecap="round"></path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-grid place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-white hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none"><svg
+                                width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4 lg:h-6 lg:w-6">
+                                <path
+                                    d="M16 22.0268V19.1568C16.0375 18.68 15.9731 18.2006 15.811 17.7506C15.6489 17.3006 15.3929 16.8902 15.06 16.5468C18.2 16.1968 21.5 15.0068 21.5 9.54679C21.4997 8.15062 20.9627 6.80799 20 5.79679C20.4558 4.5753 20.4236 3.22514 19.91 2.02679C19.91 2.02679 18.73 1.67679 16 3.50679C13.708 2.88561 11.292 2.88561 8.99999 3.50679C6.26999 1.67679 5.08999 2.02679 5.08999 2.02679C4.57636 3.22514 4.54413 4.5753 4.99999 5.79679C4.03011 6.81549 3.49251 8.17026 3.49999 9.57679C3.49999 14.9968 6.79998 16.1868 9.93998 16.5768C9.61098 16.9168 9.35725 17.3222 9.19529 17.7667C9.03334 18.2112 8.96679 18.6849 8.99999 19.1568V22.0268"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M9 20.0267C6 20.9999 3.5 20.0267 2 17.0267" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-grid place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-white hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none"><svg
+                                width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4 lg:h-6 lg:w-6">
+                                <path
+                                    d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12Z"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16.6726 20.8435C15.5 14 12.5 8.00003 8.5 2.62964" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M2.06653 10.8406C6.00004 11 15.2829 10.5 19.1415 5" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21.9677 12.81C15.3438 10.8407 7.50002 14.0001 5.23145 19.3613"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="grid grid-cols-3 justify-between gap-x-6 gap-y-4">
+                    <ul>
+                        <p class="font-sans antialiased text-lg text-current mb-2 font-bold opacity-50">Product
+                        </p>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Overview</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Features</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Solutions</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Tutorials</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <p class="font-sans antialiased text-lg text-current mb-2 font-semibold opacity-50">Company
+                        </p>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">About
+                                us</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Press</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">News</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <p class="font-sans antialiased text-lg text-current mb-2 font-semibold opacity-50">Resource
+                        </p>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Newsletter</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Events</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Help
+                                center</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="mt-10 flex w-full flex-col items-center justify-center gap-4 border-t border-stone-200 py-4 md:flex-row md:justify-between">
+                <small class="font-sans antialiased text-sm text-current text-center">© 2025
+                    <a href="https://material-tailwind.com/">Budgethook</a>. All Rights Reserved.</small>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
+</body>
+
+</html>

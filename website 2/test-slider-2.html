@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #333;
+    }
+
+    .swiper-2 {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide-2 {
+      font-size: 18px;
+      height: auto;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper-2 mySwiper-2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide-2">
+        <h4>Scroll Container</h4>
+      </div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper2 = new Swiper(".mySwiper-2", {
+      direction: "vertical",
+      slidesPerView: "auto",
+      freeMode: true,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+      mousewheel: true,
+    });
+  </script>
+</body>
+
+</html>

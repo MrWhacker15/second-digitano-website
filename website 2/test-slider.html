@@ -1,0 +1,690 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<body>
+    <!-- navbar start -->
+    <nav class=" shadow-lg overflow-hidden  bg-(--accent-color) text-white shadow-stone-950/20 w-full px-5 py-5">
+        <div class="flex items-center">
+            <a href="#" class="poppins antialiased text-2xl text-current ml-2 mr-5 block py-1 font-bold">Budgethook</a>
+
+            <div class="hidden lg:block">
+                <ul class="mt-4 flex flex-col gap-x-2 gap-y-1.5 lg:mt-0 lg:flex-row lg:items-center">
+                    <li>
+                        <a href="index.html"
+                            class="poppins antialiased text-md font-normal px-3 py-2 rounded text-white hover:bg-zinc-200/80 hover:text-black transition-all duration-300">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="categories.html"
+                            class="poppins antialiased text-md font-normal px-3 py-2 rounded text-white hover:bg-zinc-200/80 hover:text-black transition-all duration-300">Categories</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html"
+                            class="poppins antialiased text-md font-normal px-3 py-2 rounded text-white hover:bg-zinc-200/80 hover:text-black transition-all duration-300">About
+                            Us</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="ml-auto w-40">
+                <div class="relative w-full">
+                    <input placeholder="Search here..." type="search"
+                        class="w-full aria-disabled:cursor-not-allowed outline-none focus:outline-none text-stone-800 dark:text-white placeholder:text-stone-600/60 ring-transparent border border-stone-200 transition-all ease-in disabled:opacity-50 disabled:pointer-events-none select-none text-sm py-1.5 pl-8 pr-2 ring shadow-sm bg-white rounded-lg duration-100 hover:border-stone-300 hover:ring-none focus:border-stone-400 focus:ring-none peer" />
+                    <span
+                        class="pointer-events-none absolute left-2 top-1/2 -translate-y-1/2 text-stone-600/70 peer-focus:text-stone-800 peer-focus:text-stone-800 dark:peer-hover:text-white dark:peer-focus:text-white transition-all duration-300 ease-in overflow-hidden w-4 h-4"><svg
+                            width="1.5em" height="1.5em" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-full w-full">
+                            <path d="M17 17L21 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path
+                                d="M3 11C3 15.4183 6.58172 19 11 19C13.213 19 15.2161 18.1015 16.6644 16.6493C18.1077 15.2022 19 13.2053 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11Z"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <button data-dui-toggle="collapse" data-dui-target="#navbar-collapse-search" aria-expanded="false"
+                aria-controls="navbar-collapse-search"
+                class="place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-stone-800 hover:bg-stone-800/5 hover:border-stone-800/5 shadow-none hover:shadow-none ml-1 grid lg:hidden"><svg
+                    width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4">
+                    <path d="M3 5H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3 12H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3 19H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="overflow-hidden transition-[max-height] duration-300 ease-in-out max-h-0 lg:hidden"
+            id="navbar-collapse-search">
+            <ul class="flex flex-col gap-0.5 mt-2">
+                <li>
+                    <a href="#"
+                        class="poppins antialiased text-sm text-current flex items-center gap-x-2 p-1 hover:text-primary uppercase">Home</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="font-sans antialiased text-sm text-current flex items-center gap-x-2 p-1 hover:text-primary"><svg
+                            width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4">
+                            <path
+                                d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M4.271 18.3457C4.271 18.3457 6.50002 15.5 12 15.5C17.5 15.5 19.7291 18.3457 19.7291 18.3457"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>categories</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="font-sans antialiased text-sm text-current flex items-center gap-x-2 p-1 hover:text-primary"><svg
+                            width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4">
+                            <path
+                                d="M21 7.35304L21 16.647C21 16.8649 20.8819 17.0656 20.6914 17.1715L12.2914 21.8381C12.1102 21.9388 11.8898 21.9388 11.7086 21.8381L3.30861 17.1715C3.11814 17.0656 3 16.8649 3 16.647L2.99998 7.35304C2.99998 7.13514 3.11812 6.93437 3.3086 6.82855L11.7086 2.16188C11.8898 2.06121 12.1102 2.06121 12.2914 2.16188L20.6914 6.82855C20.8818 6.93437 21 7.13514 21 7.35304Z"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M3.52844 7.29357L11.7086 11.8381C11.8898 11.9388 12.1102 11.9388 12.2914 11.8381L20.5 7.27777"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M12 21L12 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path
+                                d="M11.6914 11.8285L3.89139 7.49521C3.49147 7.27304 3 7.56222 3 8.01971V16.647C3 16.8649 3.11813 17.0656 3.30861 17.1715L11.1086 21.5048C11.5085 21.727 12 21.4378 12 20.9803V12.353C12 12.1351 11.8819 11.9344 11.6914 11.8285Z"
+                                fill="currentColor" stroke="currentColor" stroke-linejoin="round"></path>
+                        </svg>Blocks</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="font-sans antialiased text-sm text-current flex items-center gap-x-2 p-1 hover:text-primary"><svg
+                            width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4">
+                            <path d="M7 6L17 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path d="M7 9L17 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path d="M9 17H15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path
+                                d="M3 12H2.6C2.26863 12 2 12.2686 2 12.6V21.4C2 21.7314 2.26863 22 2.6 22H21.4C21.7314 22 22 21.7314 22 21.4V12.6C22 12.2686 21.7314 12 21.4 12H21M3 12V2.6C3 2.26863 3.26863 2 3.6 2H20.4C20.7314 2 21 2.26863 21 2.6V12M3 12H21"
+                                stroke="currentColor"></path>
+                        </svg>Docs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+<!-- component -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar by @rzcodes</title>
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+        
+      }
+    </style>
+  </head>
+  <body>
+	 <nav class="shadow-lg overflow-hidden  bg-(--accent-color) text-white shadow-stone-950/20 md:px-16 px-5 py-5 flex flex-wrap items-center md:py-0">
+
+    <div class="flex-1 flex justify-between items-center">
+    
+      <a href="#" class="poppins antialiased text-2xl text-current ml-2 mr-5 block py-1 font-bold">Budgethook</a>
+    </div>
+    <label for="menu-toggle" class="cursor-pointer md:hidden block">
+      <svg
+        class="fill-current text-white"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+      >
+        <title>menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+      </svg>
+    </label>
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+    <div class="py-4 hidden md:flex md:items-center md:w-auto w-full" id="menu">
+      <nav>
+        
+        <ul class="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-1 md:text-lg md:flex  md:pt-0">
+                    <li class="py-2 md:py-0">
+                        <a href="index.html"
+                            class="poppins antialiased text-md font-normal px-3 py-2 rounded text-white hover:bg-zinc-200/80 hover:text-black transition-all duration-300">Home</a>
+                    </li>
+
+                    <li class="py-2 md:py-0">
+                        <a href="categories.html"
+                            class="poppins antialiased text-md font-normal px-3 py-2 rounded text-white hover:bg-zinc-200/80 hover:text-black transition-all duration-300">Categories</a>
+                    </li>
+
+                    <li class="py-3 md:py-0 lg:mr-2">
+                        <a href="about.html"
+                            class="poppins antialiased text-md font-normal px-3 py-2 rounded text-white hover:bg-zinc-200/80 hover:text-black transition-all duration-300">About
+                            Us</a>
+                    </li>
+
+                    <div class="ml-auto mr-auto w-8 lg:w-40">
+                <div class="relative w-full">
+                    <input placeholder="Search here..." type="search"
+                        class="w-full aria-disabled:cursor-not-allowed outline-none focus:outline-none text-stone-800 dark:text-white placeholder:hidden lg:placeholder:text-stone-600/60 ring-transparent border border-stone-200 transition-all ease-in disabled:opacity-50 disabled:pointer-events-none select-none text-sm py-1.5 p-0 lg:pl-8 lg:pr-2 ring shadow-sm bg-white rounded-md duration-100 hover:border-stone-300 hover:ring-none focus:border-stone-400 focus:ring-none peer" />
+                    <span
+                        class="pointer-events-none absolute left-2 top-1/2 -translate-y-1/2 text-stone-600/70  dark:peer-hover:text-black dark:peer-focus:text-white transition-all duration-300 ease-in overflow-hidden w-4 h-4"><svg
+                            width="1.5em" height="1.5em" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-full w-full">
+                            <path d="M17 17L21 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path
+                                d="M3 11C3 15.4183 6.58172 19 11 19C13.213 19 15.2161 18.1015 16.6644 16.6493C18.1077 15.2022 19 13.2053 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11Z"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+                </ul>
+      </nav>
+    </div>
+  </nav>
+  </body>
+</html>
+
+    <!-- category section start -->
+    <section class="w-full container mt-20 mb-20 px-5 py-8 lg:px-10 mx-auto max-w-[900px] bg-stone-100">
+
+        <!-- Author  -->
+
+
+        <!-- latest post section start -->
+        <section class="w-full container  px-5 bg-stone-100">
+
+
+            <!-- Author  -->
+            <div class="py-4">
+                <h4 class="text-5xl text-center font-bold poppins text-black mb-2">Shop
+                </h4>
+                <h4 class="text-md text-center font-normal poppins text-black mb-2">8 Offers Available
+                </h4>
+            </div>
+
+            <!-- latest post heading -->
+            <div class="flex justify-between mt-2 mb-10 border-b-1 py-2 border-stone-500">
+                <h4 class="text-4xl font-bold poppins text-black  ">Coupons</h4>
+
+            </div>
+
+            <div class="space-y-4 px-2 bg-stone-100">
+                <!-- row -->
+
+                <div class=" bg-stone-100">
+                    <a href="">
+                        <div
+                            class="rounded-lg border shadow-sm overflow-hidden bg-white border-stone-200 shadow-stone-950/5 flex h-[8rem] w-full max-w-[800px] flex-row  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                            <div class="flex p-6 items-center justify-between w-full">
+                                <div class="w-full h-max rounded ">
+                                    <small
+                                        class="poppins antialiased text-sm mb-8 text-white bg-(--accent-color) px-2 py-1 rounded-md">20%
+                                        Off</small>
+                                    <h5
+                                        class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                        15% Off Storewide
+                                    </h5>
+                                    <small class="poppins antialiased text-sm mb-8 text-stone-600">Free shipping on
+                                        orders above $54 </small>
+
+                                </div>
+                                <div>
+                                    <a href="blogpost.html">
+                                        <button
+                                            class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white hover:text-black hover:bg-zinc-200 transition-all duration-300 hover:scale-110">Get
+                                            Code</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <!-- row -->
+
+                <div>
+                    <a href="">
+                        <div
+                            class="rounded-lg border shadow-sm overflow-hidden bg-white border-stone-200 shadow-stone-950/5 flex h-[8rem] w-full max-w-[800px] flex-row  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                            <div class="flex p-6 items-center justify-between w-full">
+                                <div class="w-full h-max rounded ">
+                                    <small
+                                        class="poppins antialiased text-sm mb-8 text-white bg-(--accent-color) px-2 py-1 rounded-md">20%
+                                        Off</small>
+                                    <h5
+                                        class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                        15% Off Storewide
+                                    </h5>
+                                    <small class="poppins antialiased text-sm mb-8 text-stone-600">Free shipping on
+                                        orders above $54 </small>
+
+                                </div>
+                                <div>
+                                    <a href="blogpost.html">
+                                        <button
+                                            class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white hover:text-black hover:bg-zinc-200 transition-all duration-300 hover:scale-110">Get
+                                            Code</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <!-- row -->
+
+                <div>
+                    <a href="">
+                        <div
+                            class="rounded-lg border shadow-sm overflow-hidden bg-white border-stone-200 shadow-stone-950/5 flex h-[8rem] w-full max-w-[800px] flex-row  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                            <div class="flex p-6 items-center justify-between w-full">
+                                <div class="w-full h-max rounded ">
+                                    <small
+                                        class="poppins antialiased text-sm mb-8 text-white bg-(--accent-color) px-2 py-1 rounded-md">20%
+                                        Off</small>
+                                    <h5
+                                        class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                        15% Off Storewide
+                                    </h5>
+                                    <small class="poppins antialiased text-sm mb-8 text-stone-600">Free shipping on
+                                        orders above $54 </small>
+
+                                </div>
+                                <div>
+                                    <a href="blogpost.html">
+                                        <button
+                                            class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white hover:text-black hover:bg-zinc-200 transition-all duration-300 hover:scale-110">Get
+                                            Code</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <!-- row -->
+                <div>
+                    <a href="">
+                        <div
+                            class="rounded-lg border shadow-sm overflow-hidden bg-white border-stone-200 shadow-stone-950/5 flex h-[8rem] w-full max-w-[800px] flex-row  transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                            <div class="flex p-6 items-center justify-between w-full">
+                                <div class="w-full h-max rounded ">
+                                    <small
+                                        class="poppins antialiased text-sm mb-8 text-white bg-(--accent-color) px-2 py-1 rounded-md">20%
+                                        Off</small>
+                                    <h5
+                                        class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                        15% Off Storewide
+                                    </h5>
+                                    <small class="poppins antialiased text-sm mb-8 text-stone-600">Free shipping on
+                                        orders above $54 </small>
+
+                                </div>
+                                <div>
+                                    <a href="blogpost.html">
+                                        <button
+                                            class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white hover:text-black hover:bg-zinc-200 transition-all duration-300 hover:scale-110">Get
+                                            Code</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+
+
+            <div>
+                <!-- latest post heading -->
+                <div class="flex justify-between mt-15 mb-10 border-b-1 py-2 border-stone-500">
+                    <h4 class="text-4xl font-bold poppins text-black  ">Shop Now</h4>
+
+                </div>
+
+                <div class="flex flex-wrap gap-3 xl:gap-5 justify-center mb-10">
+
+                    <div class="flex gap-5 flex-col sm:flex-row">
+                        <div
+                            class=" shadow-sm group overflow-hidden bg-white shadow-stone-950/5 flex h-[11rem] w-full max-w-[48rem] flex-row  transition-all duration-300 cursor-pointer  hover:bg-(--accent-color) hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                            <div class=" m-0 h-full w-full rounded-r-none">
+                                <img src="assets/cycle-1.jpg" alt="card-image" class="h-full w-full object-cover" />
+                            </div>
+                            <div class="w-full h-max rounded p-4 group-hover:text-white transition-all duration-300">
+
+                                <h5
+                                    class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                    Braided Jelly Flip Flops</h5>
+
+                                <h4
+                                    class="poppins antialiased font-normal text-md md:text-md lg:text-md text-current mb-2">
+                                    <span class="line-through">$18</span> $9
+                                </h4>
+
+                                <div class="w-full rounded mb-2">
+                                    <button
+                                        class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white group-hover:text-black group-hover:bg-zinc-200 transition-all duration-300 group-hover:scale-110">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class=" shadow-sm group overflow-hidden bg-white shadow-stone-950/5 flex h-[11rem] w-full max-w-[48rem] flex-row  transition-all duration-300 cursor-pointer  hover:bg-(--accent-color) hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                            <div class=" m-0 h-full w-full rounded-r-none">
+                                <img src="assets/cycle-1.jpg" alt="card-image" class="h-full w-full object-cover" />
+                            </div>
+                            <div class="w-full h-max rounded p-4 group-hover:text-white transition-all duration-300">
+
+                                <h5
+                                    class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                    Braided Jelly Flip Flops</h5>
+
+                                <h4
+                                    class="poppins antialiased font-normal text-md md:text-md lg:text-md text-current mb-2">
+                                    <span class="line-through">$18</span> $9
+                                </h4>
+
+                                <div class="w-full rounded mb-2">
+                                    <button
+                                        class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white group-hover:text-black group-hover:bg-zinc-200 transition-all duration-300 group-hover:scale-110">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="flex gap-5 flex-col sm:flex-row">
+                        <div
+                            class=" shadow-sm group overflow-hidden bg-white shadow-stone-950/5 flex h-[11rem] w-full max-w-[48rem] flex-row  transition-all duration-300 cursor-pointer  hover:bg-(--accent-color) hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                            <div class=" m-0 h-full w-full rounded-r-none">
+                                <img src="assets/cycle-1.jpg" alt="card-image" class="h-full w-full object-cover" />
+                            </div>
+                            <div class="w-full h-max rounded p-4 group-hover:text-white transition-all duration-300">
+
+                                <h5
+                                    class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                    Braided Jelly Flip Flops</h5>
+
+                                <h4
+                                    class="poppins antialiased font-normal text-md md:text-md lg:text-md text-current mb-2">
+                                    <span class="line-through">$18</span> $9
+                                </h4>
+
+                                <div class="w-full rounded mb-2">
+                                    <button
+                                        class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white group-hover:text-black group-hover:bg-zinc-200 transition-all duration-300 group-hover:scale-110">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class=" shadow-sm group overflow-hidden bg-white shadow-stone-950/5 flex h-[11rem] w-full max-w-[48rem] flex-row  transition-all duration-300 cursor-pointer  hover:bg-(--accent-color) hover:shadow-lg hover:shadow-gray-300 hover:-translate-y-0.75">
+                            <div class=" m-0 h-full w-full rounded-r-none">
+                                <img src="assets/cycle-1.jpg" alt="card-image" class="h-full w-full object-cover" />
+                            </div>
+                            <div class="w-full h-max rounded p-4 group-hover:text-white transition-all duration-300">
+
+                                <h5
+                                    class="poppins antialiased font-bold text-md md:text-lg lg:text-lg text-current mt-2 ">
+                                    Braided Jelly Flip Flops</h5>
+
+                                <h4
+                                    class="poppins antialiased font-normal text-md md:text-md lg:text-md text-current mb-2">
+                                    <span class="line-through">$18</span> $9
+                                </h4>
+
+                                <div class="w-full rounded mb-2">
+                                    <button
+                                        class="poppins text-sm uppercase rounded-md bg-(--accent-color) px-3 py-2 text-white group-hover:text-black group-hover:bg-zinc-200 transition-all duration-300 group-hover:scale-110">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+        <!-- latest post section end -->
+
+
+
+
+
+
+
+
+        <!-- by author -->
+
+    </section>
+    <!-- category section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="relative w-full bg-black text-white">
+        <div class="mx-auto w-full max-w-7xl px-8 py-12">
+            <div class="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
+                <div class="flex flex-col">
+                    <h6 class="poppins antialiased font-bold text-3xl md:text-3xl lg:text-4xl text-current mb-4">
+                        Budgethook
+                    </h6>
+                    <div class="flex gap-1 lg:gap-3 m-0">
+                        <a href="#"
+                            class="inline-grid place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-white hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none"><svg
+                                width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4 lg:h-6 lg:w-6">
+                                <path
+                                    d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-grid place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-white hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none"><svg
+                                width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4 lg:h-6 lg:w-6">
+                                <path
+                                    d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                                    stroke="currentColor"></path>
+                                <path d="M17.5 6.51L17.51 6.49889" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-grid place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-white hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none"><svg
+                                width="1.5em" height="1.5em" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4 lg:h-6 lg:w-6">
+                                <path
+                                    d="M16.8198 20.7684L3.75317 3.96836C3.44664 3.57425 3.72749 3 4.22678 3H6.70655C6.8917 3 7.06649 3.08548 7.18016 3.23164L20.2468 20.0316C20.5534 20.4258 20.2725 21 19.7732 21H17.2935C17.1083 21 16.9335 20.9145 16.8198 20.7684Z"
+                                    stroke="currentColor"></path>
+                                <path d="M20 3L4 21" stroke="currentColor" stroke-linecap="round"></path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-grid place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-white hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none"><svg
+                                width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4 lg:h-6 lg:w-6">
+                                <path
+                                    d="M16 22.0268V19.1568C16.0375 18.68 15.9731 18.2006 15.811 17.7506C15.6489 17.3006 15.3929 16.8902 15.06 16.5468C18.2 16.1968 21.5 15.0068 21.5 9.54679C21.4997 8.15062 20.9627 6.80799 20 5.79679C20.4558 4.5753 20.4236 3.22514 19.91 2.02679C19.91 2.02679 18.73 1.67679 16 3.50679C13.708 2.88561 11.292 2.88561 8.99999 3.50679C6.26999 1.67679 5.08999 2.02679 5.08999 2.02679C4.57636 3.22514 4.54413 4.5753 4.99999 5.79679C4.03011 6.81549 3.49251 8.17026 3.49999 9.57679C3.49999 14.9968 6.79998 16.1868 9.93998 16.5768C9.61098 16.9168 9.35725 17.3222 9.19529 17.7667C9.03334 18.2112 8.96679 18.6849 8.99999 19.1568V22.0268"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M9 20.0267C6 20.9999 3.5 20.0267 2 17.0267" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-grid place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-white hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none"><svg
+                                width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4 lg:h-6 lg:w-6">
+                                <path
+                                    d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12Z"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16.6726 20.8435C15.5 14 12.5 8.00003 8.5 2.62964" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M2.06653 10.8406C6.00004 11 15.2829 10.5 19.1415 5" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21.9677 12.81C15.3438 10.8407 7.50002 14.0001 5.23145 19.3613"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="grid grid-cols-3 justify-between gap-x-6 gap-y-4">
+                    <ul>
+                        <p class="font-sans antialiased text-lg text-current mb-2 font-bold opacity-50">Product
+                        </p>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Overview</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Features</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Solutions</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Tutorials</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <p class="font-sans antialiased text-lg text-current mb-2 font-semibold opacity-50">Company
+                        </p>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">About
+                                us</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Press</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">News</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <p class="font-sans antialiased text-lg text-current mb-2 font-semibold opacity-50">Resource
+                        </p>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Newsletter</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Events</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-sans antialiased text-base text-current py-1 hover:text-primary">Help
+                                center</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="mt-10 flex w-full flex-col items-center justify-center gap-4 border-t border-stone-200 py-4 md:flex-row md:justify-between">
+                <small class="font-sans antialiased text-sm text-current text-center">© 2025
+                    <a href="https://material-tailwind.com/">Budgethook</a>. All Rights Reserved.</small>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
+</body>
+
+</html>

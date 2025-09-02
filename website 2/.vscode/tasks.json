@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "windows": {
+    "command": "cmd"
+  },
+  "linux": {
+    "command": "bash"
+  },
+  "tasks": [
+    {
+      "label": "Server",
+      "icon": {
+        "id": "server-process",
+        "color": "terminal.ansiBlack",
+      },
+      "type": "shell",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "focus": false,
+        "reveal": "silent",
+        "panel": "new",
+        "clear": true
+      },
+      "command": "npx",
+      "args": ["@tailwindcss/cli", "-i", "input.css", "-o", "output.css" , "--watch"],
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+    }
+  ]
+}
