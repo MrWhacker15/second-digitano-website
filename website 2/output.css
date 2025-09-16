@@ -328,9 +328,6 @@
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
-  .mb-1 {
-    margin-bottom: calc(var(--spacing) * 1);
-  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -409,14 +406,8 @@
   .h-\[8rem\] {
     height: 8rem;
   }
-  .h-\[10rem\] {
-    height: 10rem;
-  }
   .h-\[11rem\] {
     height: 11rem;
-  }
-  .h-\[15rem\] {
-    height: 15rem;
   }
   .h-\[17rem\] {
     height: 17rem;
@@ -486,9 +477,6 @@
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
-  }
-  .max-w-\[15rem\] {
-    max-width: 15rem;
   }
   .max-w-\[48rem\] {
     max-width: 48rem;
@@ -1607,11 +1595,6 @@
       margin-top: calc(var(--spacing) * 5);
     }
   }
-  .lg\:mt-20 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 20);
-    }
-  }
   .lg\:mr-2 {
     @media (width >= 64rem) {
       margin-right: calc(var(--spacing) * 2);
@@ -1735,11 +1718,6 @@
   .lg\:py-0 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 0);
-    }
-  }
-  .lg\:py-2 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 2);
     }
   }
   .lg\:pt-0 {
@@ -1887,7 +1865,7 @@ body {
 }
 * {
   --accent-color-g: #e0779c;
-  --accent-color: #b38ce4;
+  --accent-color: #e0779c;
   --accent-color-2: #551f96;
 }
 #menu-toggle:checked + #menu {
