@@ -21,20 +21,23 @@ body {
 }
 
 * {
-  /* teal-1*/
-  /* --accent-color: #009688; */
 
-  /* teal-2 (lighter)*/
-  /* --accent-color: #00BFA6; */
-  
-  /* orange-1*/
-  /* --accent-color: #ce473b; */
-
-  /* blue-1*/
-  /* --accent-color: #1976D2; */
-  --accent-color-g: #1E35E1;
+  /* theme 1 */
+  /* --accent-color-g: #1E35E1;
   --accent-color: #1E35E1;
-  --accent-color-2: #1E96E1;
+  --accent-color-2: #1E96E1; */
+
+    /* theme 2 */
+  --accent-color-g: #e0779c;
+  --accent-color: #b38ce4;
+  --accent-color-2: #551f96;
+
+
+ /* dark purple */
+    /* theme 4 */
+  /* --accent-color-g: #817d88;
+  --accent-color: #b9b3c3;
+  --accent-color-2: #2d007a; */
 
 }
 
